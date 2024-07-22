@@ -18,13 +18,13 @@ const Buttons = () => {
     const [speed1Img, setSpeed1Img] = useState(speed1);
     const [speed2Img, setSpeed2Img] = useState(speed2);
     const [speed3Img, setSpeed3Img] = useState(speed3);
-    const [animationDuration, setAnimationDuration] = useState('4s');
+    const [animationDuration, setAnimationDuration] = useState('1s');
 
     const handleStartClick = () => {
         if (!isRunning) {
             setIsRunning(true);
             setButtonStartImg(start_clicked);
-            setAnimationDuration('4s'); 
+            setAnimationDuration('1s'); 
         }
     };
 
@@ -82,12 +82,12 @@ const Buttons = () => {
                         
                         <div className="speed_buttons">
                             <div className="speed1 batabn">
-                                <button className="button" onClick={() => handleSpeedClick('2s', 1)}>
+                                <button className="button" onClick={() => handleSpeedClick('0.6s', 1)}>
                                     <img src={speed1Img} alt="Speed 1" />
                                 </button>
                             </div>
                             <div className="speed2 batabn">
-                                <button className="button" onClick={() => handleSpeedClick('.8s', 2)}>
+                                <button className="button" onClick={() => handleSpeedClick('0.4s', 2)}>
                                     <img src={speed2Img} alt="Speed 2"/>
                                 </button>
                             </div>
