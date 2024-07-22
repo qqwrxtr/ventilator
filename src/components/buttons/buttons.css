@@ -1,16 +1,65 @@
-.start button{
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+.batabn button{
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    color: white;
+    max-width: 100px;
+    height: auto;
     border: 0;
-    background-color: green;
+    color: white;
+    background-color: transparent;
 }
 
 .fan{
-    margin-top: 500px;
+    margin-top: 600px;
+}
+.fan{
+    transform: translateY(-200px);
+    -webkit-transform: translateY(-200px);
+    -moz-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    -o-transform: translateY(-200px);
+}
+
+button img{
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
+
+.speed_buttons, .upravlenie{
+    display: flex;
+    column-gap: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    .buttons {
+        display: grid;
+        grid-template-rows: repeat(1, auto);
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        grid-template-areas: 
+            "upravlenie"
+            "speed_buttons";
+    }
+
+    .speed_buttons {
+        grid-area: speed_buttons;
+    }
+    
+    .upravlenie {
+        grid-area: upravlenie;
+    }
+    .fan{
+        margin-top: 450px;
+    }
 }

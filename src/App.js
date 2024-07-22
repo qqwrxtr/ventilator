@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Buttons from './components/buttons/Buttons.jsx';
-import Ventilator from './components/ventilator/Ventilator.jsx';
 
 function App() {
   return (

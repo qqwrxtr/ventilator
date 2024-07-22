@@ -24,10 +24,10 @@
     margin: -262px 0 0 -139px;
 }
 
-.firstimg.rotate.img{
-    animation: rotate 5s infinite linear;
+.firstimg.rotate.img {
+    animation: rotate var(--animation-duration) infinite linear;
     animation-play-state: paused;
-    -webkit-animation: rotate 5s infinite linear;
+    -webkit-animation: rotate var(--animation-duration) infinite linear;
     -webkit-animation-play-state: running;
 }
 
@@ -44,18 +44,30 @@
 }
 
 @keyframes rotate {
-    0%{
+    0% {
         transform: rotate(0);
         -webkit-transform: rotate(0);
         -moz-transform: rotate(0);
         -ms-transform: rotate(0);
         -o-transform: rotate(0);
-}
-    100%{
+    }
+    100% {
         transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
         -o-transform: rotate(360deg);
+    }
 }
+
+@media only screen and (max-width: 768px) {
+    .aaa{
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+    }
+    
 }
+
