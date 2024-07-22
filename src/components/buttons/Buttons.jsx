@@ -34,7 +34,7 @@ const Buttons = () => {
             audioRef.current.volume = 0.3;
             audioRef.current.loop = true;
         });
-    }, []);
+    });
 
     const stopAllAudio = () => {
         audioRefs.forEach(audioRef => {
