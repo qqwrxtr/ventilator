@@ -1,0 +1,61 @@
+
+
+.absolute_reshotka img{
+    position: absolute;
+    transform: translate(-150px,-270px);
+    -webkit-transform: translate(-150px,-270px);
+    -moz-transform: translate(-150px,-270px);
+    -ms-transform: translate(-150px,-270px);
+    -o-transform: translate(-150px,-270px);
+    max-width: 300px;
+    max-height: 300px;
+    z-index: 3;
+}
+
+.firstimg{
+    position: relative;
+}
+
+.firstimg img{
+    z-index: 3;
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    margin: -262px 0 0 -139px;
+}
+
+.firstimg.rotate.img{
+    animation: rotate 5s infinite linear;
+    animation-play-state: paused;
+    -webkit-animation: rotate 5s infinite linear;
+    -webkit-animation-play-state: running;
+}
+
+.piciorul img{
+    transform: translate(-125px,-100px);
+    -webkit-transform: translate(-125px,-100px);
+    -moz-transform: translate(-125px,-100px);
+    -ms-transform: translate(-125px,-100px);
+    -o-transform: translate(-125px,-100px);
+    position: absolute;
+    z-index: 2;
+    width: 250px;
+    height: 250px;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
