@@ -31,7 +31,7 @@ const Buttons = () => {
 
     useEffect(() => {
         audioRefs.forEach(audioRef => {
-            audioRef.current.volume = 0.5;
+            audioRef.current.volume = 0.3;
             audioRef.current.loop = true;
         });
     }, []);
