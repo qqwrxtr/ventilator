@@ -5,7 +5,7 @@ import Buttons from './components/buttons/Buttons.jsx';
 function App() {
   return (
     <div className="container pt-5">
-      <h1 className="text-center dadada">Creat cu drag de Teodor</h1>
+      <h1 className="text-center dadada">With love for u :)</h1>
         <Buttons/>
     </div>
   );
